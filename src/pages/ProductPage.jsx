@@ -21,7 +21,7 @@ const ProductPage = () => {
       try {
         // Later you can pass query params to backend
         const response = await axios.get(
-          `http://localhost:8000/api/products/${categorySlug}/`
+          `https://stepup-backfootwear.onrender.com/api/products/${categorySlug}/`
         );
         setProducts(response.data);
       } catch (error) {
