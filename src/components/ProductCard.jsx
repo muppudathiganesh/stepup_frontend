@@ -21,7 +21,8 @@ const ProductCard = ({ product }) => {
 
   return (
     <div className="border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
- <img src={product.image_url} alt={product.name} className="w-full h-56 object-cover" />
+    <img src={product.image} alt={product.name} className="w-full h-56 object-cover" />
+
 
       <div className="p-4">
         <div className="flex items-center text-yellow-500">
