@@ -2,14 +2,15 @@ import axios from 'axios';
 
 // Create an axios instance
 const api = axios.create({
-  baseURL: 'https://stepup-backfootwear.onrender.com/api/',  // Your Django API base URL
+  baseURL: 'https://stepup-backfootwear.onrender.com/',  // Your Django API base URL
   headers: {
     'Content-Type': 'application/json',
   },
 });
+await api.get('/api/products/women/');
 
-// Optionally, you can add interceptors if needed later
-// api.interceptors.request.use(...);
-// api.interceptors.response.use(...);
+await api.get('/api/products/men/');
+
+await api.get('/api/products/kids/');
 
 export default api;
